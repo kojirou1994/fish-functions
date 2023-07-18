@@ -1,7 +1,7 @@
 function ytb-all
     for url in $argv
         yt-dlp -f '(bestvideo[vcodec^=avc]/bestvideo)+(bestaudio[acodec^=mp4a]/bestaudio)' --write-subs --sub-langs all --no-overwrites $url
-        yt-dlp -f '(bestvideo[vcodec^=vp9]/bestvideo)+(bestaudio[acodec=opus]/bestaudio)' $url
+        yt-dlp -f '(bestvideo[vcodec^=vp]/bestvideo)+(bestaudio[acodec=opus]/bestaudio)' $url
     end
     ytb-av1 $argv
 end
