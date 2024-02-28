@@ -1,4 +1,4 @@
-alias ll 'exa -la -@ -g -h --time-style long-iso'
+alias ll 'eza -la -@ -g -h --time-style long-iso'
 alias lt 'll -T'
 
 if test (uname) = Darwin
