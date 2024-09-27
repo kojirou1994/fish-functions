@@ -1,3 +1,3 @@
 function rclone-auth
-    read -gxs RCLONE_CONFIG_PASS
+    read -p 'set_color green; echo -n password; set_color normal; echo "> "' -gxs RCLONE_CONFIG_PASS
 end
