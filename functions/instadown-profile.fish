@@ -1,6 +1,6 @@
 function instadown-profile
   instaloader --login=kojirou1994 \
-    --stories --highlights --tagged --reels --igtv --comments --geotags \
+    --stories --highlights --tagged --reels --igtv --geotags \
     --filename-pattern={owner_username}_{date_utc}_UTC \
     $argv
 end
