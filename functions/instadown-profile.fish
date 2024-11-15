@@ -1,6 +1,6 @@
 function instadown-profile
   instaloader --login=kojirou1994 \
-    --stories --highlights --tagged --reels --igtv --geotags \
+    --stories --highlights --tagged --reels --geotags \
     --filename-pattern={owner_username}_{date_utc}_UTC \
     $argv
 end
@@ -8,7 +8,7 @@ end
 function instadown-post
   for post in $argv
     instaloader --login=kojirou1994 \
-      --stories --highlights --tagged --reels --igtv --comments --geotags \
+      --stories --highlights --tagged --reels --comments --geotags \
       --dirname-pattern=post --filename-pattern={owner_username}_{date_utc} \
       -- -$post
   end
